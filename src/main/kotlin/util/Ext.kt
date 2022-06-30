@@ -12,7 +12,10 @@ fun String.toIntList(): List<Int> = toCharArray().map(Char::digitToInt).toList()
  */
 fun Day<Any>.getResource(path: String) = this::class.java.classLoader.getResource(path)
 
-
+/**
+ * Circles the given index so it is in bounds
+ * Credit: tginsberg/cirkle
+ */
 fun <T> List<T>.circular(idx: Int): Int {
     if (idx < 0) {
         return (idx % size + size) % size

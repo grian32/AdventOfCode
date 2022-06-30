@@ -7,7 +7,7 @@ import util.toIntList
 
 
 class Day1 : Day<Int> {
-    private val input = getResource("2017/day1.txt").readText().toIntList()
+    private val input = getResource("2017/day1.txt")!!.readText().toIntList()
 
     override fun part1(): Int {
         var sum = 0

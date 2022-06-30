@@ -1,7 +1,7 @@
-import year2017.Day1
+import year2017.Day2
 
 fun main() {
-    val day = Day1()
+    val day = Day2()
 
     println(day.part1())
     println(day.part2())
