@@ -5,8 +5,6 @@ import util.getResource
 
 class Day2 : Day<Int> {
     private val input = processInput(getResource("2017/day2.txt")!!.readText())
-        private val length: Int = 16
-
 
     override fun part1(): Int {
         var sum = 0
