@@ -23,3 +23,7 @@ fun <T> List<T>.circular(idx: Int): Int {
 
     return idx % size
 }
+
+fun String.isAnagramOf(other: String): Boolean {
+    return this.toCharArray().toList().sorted() == other.toCharArray().toList().sorted()
+}
